@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘖嘖 zec zec x 讓美好的事物發生：台灣的群眾集資(Crowdfunding)平台</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="0421_reset.css">
+    <link href="./fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://www.zeczec.com/assets/fav-69601a279a66f2e6e31e508900d4f057559d3affcae42730d045b17d281107a6.png" rel="shortcut icon" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+        .nav-button:hover {
+            color: black;
+            text-decoration: none;
+        }
+        .nav-more:hover {
+            color: blueviolet;
+        }
+        .by:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="logo" style="cursor: pointer;">
+                    <h1 class="gray text-mono hover-logo ma0 d-flex align-items-center">
+                        <div class="dib logo-safari-fix"><svg class="logo v-mid" style="height: 28px; width: 28px;"
+                                viewBox="0 0 138 138" xmlns="http://www.w3.org/2000/svg">
+                                <title>zeczec</title>
+                                <path
+                                    d="M69 0a69 69 0 1 0 69 69A69 69 0 0 0 69 0zm38.7 75.53l-1.55 7.18c-.23 1.18-.81 1.54-1.82 1.49l-40.48-1.9a1.72 1.72 0 0 1-1.43-2.2l2.3-11.94a2.05 2.05 0 0 0-1.87-2.23l-31-2.09c-1 0-1.57-.66-1.57-1.82l1.16-6.81c.22-1.15.8-1.43 1.84-1.37l41.94 2.32a1.94 1.94 0 0 1 1.72 2.13l-2.19 12.13a1.88 1.88 0 0 0 1.87 2.1l30.06 1.39c.93 0 1.24.53 1.03 1.62z">
+                                </path>
+                            </svg>
+                        </div>
+                        <svg class="v-mid ml2 ml-3 mt-2" style="height: 20px; width: 44px;" viewBox="0 0 64.08 28.95"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>嘖嘖</title>
+                            <path
+                                d="M10.44 11.74h14.2a.6.6 0 0 0 .4-.75.61.61 0 0 0-.4-.44h-5.48a.42.42 0 0 1-.42-.42v-1.6a.42.42 0 0 1 .42-.42h5a.58.58 0 0 0 .42-.64.59.59 0 0 0-.42-.52h-5a.42.42 0 0 1-.42-.42V5.16a.42.42 0 0 1 .42-.42h5.72a.68.68 0 0 0 .42-.69.57.57 0 0 0-.42-.52h-5.72a.42.42 0 0 1-.42-.42V.47a.42.42 0 0 0-.34-.41h-1.67a.42.42 0 0 0-.5.43l.1 2.61a.42.42 0 0 1-.42.43h-5.34a.56.56 0 0 0-.42.55.69.69 0 0 0 .42.67h5.33a.42.42 0 0 1 .42.42v1.36a.42.42 0 0 1-.42.42h-4.74a.58.58 0 0 0-.43.57v.05a.59.59 0 0 0 .42.59h4.75a.42.42 0 0 1 .42.42v1.61a.42.42 0 0 1-.42.42h-5.47a.58.58 0 0 0-.42.59.63.63 0 0 0 .43.54zm14.04 1.73a.42.42 0 0 0-.42-.41H11.33a.7.7 0 0 0-.74.63v9.9a.75.75 0 0 0 .77.75l1.65-.05h10.81a.75.75 0 0 0 .76-.77c0-1.19-.08-3.67-.08-6.7V14.5zm-11.47 1.29a.42.42 0 0 1 .42-.42h8a.75.75 0 0 1 .75.75v7a.75.75 0 0 1-.75.75h-8a.42.42 0 0 1-.42-.42m-5.44-1.53a.42.42 0 0 0 .39-.43c0-1.37-.14-13.17-.14-13.17a.42.42 0 0 0-.42-.42h-7a.42.42 0 0 0-.42.43v13.16a.42.42 0 0 0 .47.42h7.12zm-2-2.41a.42.42 0 0 1-.42.42H2.74a.42.42 0 0 1-.42-.42V8.84a.42.42 0 0 1 .42-.42h2.41a.42.42 0 0 1 .42.42v9.64z">
+                            </path>
+                            <path
+                                d="M16.307 23.2l.808 1.057-5.972 4.57a.59.59 0 0 1-.827-.11l-.456-.596a.59.59 0 0 1 .11-.824l5.504-4.21a.59.59 0 0 1 .827.11zM49.01 11.74h14.2a.6.6 0 0 0 .4-.75.61.61 0 0 0-.4-.44h-5.48a.42.42 0 0 1-.42-.42v-1.6a.42.42 0 0 1 .42-.42h5a.58.58 0 0 0 .42-.64.59.59 0 0 0-.42-.52h-5a.42.42 0 0 1-.42-.42V5.16a.42.42 0 0 1 .42-.42h5.72a.68.68 0 0 0 .42-.69.57.57 0 0 0-.42-.52h-5.72a.42.42 0 0 1-.42-.42V.47a.42.42 0 0 0-.34-.41H55.3a.42.42 0 0 0-.5.43l.1 2.61a.42.42 0 0 1-.42.43h-5.32a.56.56 0 0 0-.42.55.69.69 0 0 0 .42.67h5.33a.42.42 0 0 1 .42.42v1.36a.42.42 0 0 1-.42.42h-4.74a.58.58 0 0 0-.43.57v.05a.59.59 0 0 0 .42.59h4.75a.42.42 0 0 1 .42.42v1.61a.42.42 0 0 1-.42.42h-5.47a.58.58 0 0 0-.42.59.63.63 0 0 0 .41.54zm14.04 1.73a.42.42 0 0 0-.42-.41H49.9a.7.7 0 0 0-.74.63v9.9a.75.75 0 0 0 .77.75l1.65-.05h10.81a.75.75 0 0 0 .76-.77c0-1.19-.08-3.67-.08-6.7V14.5zm-11.48 1.29a.42.42 0 0 1 .42-.42h8a.75.75 0 0 1 .75.75v7a.75.75 0 0 1-.75.75h-8a.42.42 0 0 1-.42-.42m-5.41-1.53a.42.42 0 0 0 .39-.43c0-1.37-.14-13.17-.14-13.17a.42.42 0 0 0-.42-.42h-7a.42.42 0 0 0-.42.43v13.16a.42.42 0 0 0 .47.42h7.12zm-2-2.41a.42.42 0 0 1-.42.42h-2.41a.42.42 0 0 1-.42-.42V8.84a.42.42 0 0 1 .42-.42h2.41a.42.42 0 0 1 .42.42v9.64zm-25.984 5.764l.754-.985a.59.59 0 0 1 .827-.11l5.504 4.21a.59.59 0 0 1 .11.825l-.453.596a.59.59 0 0 1-.827.11l-5.9-4.514a.09.09 0 0 1-.02-.126z">
+                            </path>
+                            <path
+                                d="M54.943 23.217l.808 1.056-5.97 4.57a.59.59 0 0 1-.826-.11l-.45-.588a.59.59 0 0 1 .11-.827l5.504-4.21a.59.59 0 0 1 .827.11zm1.857 1.037l.753-.985a.59.59 0 0 1 .828-.11l5.506 4.21a.59.59 0 0 1 .11.825l-.455.596a.59.59 0 0 1-.827.11l-5.9-4.514a.09.09 0 0 1-.012-.134zm-5.87-7.534l.11.63a.3.3 0 0 0 .28.29l3.32.16a.3.3 0 0 1 .27.36l-.34 1.23a.3.3 0 0 0 .27.36l6.32.28a.3.3 0 0 0 .31-.3v-.67a.3.3 0 0 0-.29-.29h-3.77a.3.3 0 0 1-.28-.36l.32-1.32a.3.3 0 0 0-.28-.36l-5.87-.29a.3.3 0 0 0-.37.28zm-38.53 0l.11.63a.3.3 0 0 0 .28.29l3.32.16a.3.3 0 0 1 .27.36l-.39 1.23a.3.3 0 0 0 .27.36l6.32.28a.3.3 0 0 0 .31-.3v-.67a.3.3 0 0 0-.29-.29h-3.77a.3.3 0 0 1-.28-.36l.32-1.32a.3.3 0 0 0-.28-.36l-5.87-.29a.3.3 0 0 0-.32.28z">
+                            </path>
+                        </svg>
+
+                    </h1>
+                </div>
+                <div class="nav-links mr-auto border-left ml-4 pl-4 d-flex align-items-center my-auto"
+                    style="height: 30px;">
+                    <a class="text-dark mr-2" style="text-decoration: none;" href="">探索</a>
+                    <a class="text-dark mr-2" style="text-decoration: none;" href="">提案</a>
+                </div>
+                <div class="btn-group btn-sm d-flex align-items-center" role="group" aria-label="Basic example">
+                    <button type="button" class="mr-1 px-3"
+                        style="font-weight: 600;background-color: rgba(204, 204, 204, 0.3);border: none;border-top-left-radius: 10px;border-bottom-left-radius: 10px;height: 30px;cursor: pointer;">登入</button>
+                    <button type="button" class="mr-1 px-3"
+                        style="font-weight: 600;background-color: rgba(204, 204, 204, 0.3);border: none;height: 30px;cursor: pointer;">註冊</button>
+                    <button type="button" class="px-3"
+                        style="color: rgb(22, 90, 200);font-weight: 600;background-color: rgba(204, 204, 204, 0.3);border: none;border-bottom-right-radius: 10px;border-top-right-radius: 10px;height: 30px;cursor: pointer;font-family: 'Rubik', sans-serif;">Facebook
+                        登入</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="navbar-second" style="background-image: url(./img/banner1.png);height: 372px;background-position: center;">
+        <div class="container d-flex" style="flex-direction: column;text-align: center;padding-top: 7%;">
+           <h4 style="font-weight:600;">嘖嘖 x 挺好店應援計畫</h4>
+           <p class="pt-3" style="font-size: 14px;line-height: 2;">疫情讓許多你我的愛店面臨經營困難，嘖嘖規劃近期啟動「挺好店應援<br>計畫」，提供<strong>實體空間／店家經營者</strong>和<strong>需要實體空間做展演的團隊</strong>應變<br>疫情的上架方案。<a href="" class="nav-more pl-2" style="color: #0050a2;text-decoration: underline;">瞭解更多</a></p>
+        </div>
+        <div class="button d-flex justify-content-center mt-1" style="flex-direction: row;">
+            <a href="" class="nav-button">
+                <p class="nav-button mr-5 px-5 py-3" style="background-color: #fff;font-size: 14px;font-weight:600;border-radius: 50px;color:rgb(80, 80, 80);">申請加入</p>
+            </a>
+            <a href="" class="nav-button">
+                <p class="nav-button px-5 py-3" style="background-color: #fff;font-size: 14px;font-weight:600;border-radius: 50px;color:rgb(80, 80, 80);">獲得上線通知</p>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="jumbotron text-light text-center w-100 d-flex flex-column align-items-center justify-content-center"
+                style="background:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('./img/banner2.jpg') 0 0 no-repeat; background-size: cover;height: 600px;cursor: pointer;">
+                <p class="border-bottom" style="font-size: 12px;">剩下 10 天</p>
+                <p style="font-size: 30px;font-weight: 300;">
+                    畢業花禮送到家 X 苒染花市防疫企劃｜在不能見面的此刻，用花束來<br>傳達祝福吧！
+                </p>
+                <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                    style="width:fit-content; font-size: 15px;font-weight: 600;">查看計畫內容 ▸</a>
+            </div>
+        </div>
+        <nav class="row position-relative">
+            <div class="position-absolute"
+                style="font-size:12px; color: rgb(131, 130, 130); top:6px; left:50%; transform:translateX(-50%);background: #fff; z-index:999; padding: 0 15px;letter-spacing: 1.5px;">
+                探索專案類別
+            </div>
+            <div class="col-12 my-3 border-top border-bottom py-4 d-flex justify-content-center"
+                style="font-size: 15px;">
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">攝影</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">科技</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">教育</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">出版</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">社會</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">設計</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">地方創生</a>
+                <a class="text-dark col-auto" style=" text-decoration: none;" href="">藝術</a>
+            </div>
+        </nav>
+        <div class="row justify-content-between my-5">
+            <h3>群眾集資</h3>
+            <!-- <button class="btn btn-outline-primary">更多 ▸</button> -->
+            <button class="more px-4 py-2" style="border: 1px solid black;background-color: #fff;border-radius: 5px;color: #0050a2;cursor: pointer;">更多 ▸</button>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_320033_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">UndoBox 2代 解密機關寶盒 | 全球首款小孩與長輩都玩得起來的桌上型密室逃脫！ | 手機連線操作方便！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">教育 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">享印學堂</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        全球第一款透過手機開啟機關的桌上型密室逃脫，寶盒之內還可放置獎賞禮物。解密難度與操作介面簡單，亦是首款小孩與長輩都...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 48 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$98,780</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_278027_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">激盪新思考，並以此改變社會文化的前景《論述設計：批判、推測及另類事物》</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">出版 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">DigitalMedicineLab</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        2021年，Digital Medicine Lab該給台灣讀者帶來什麼樣的內容？繼《推測設計》，為了不讓該類的設...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 9 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$420,919</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_321369_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">一陽紫 UV 除菌燈 | 防疫佛器，消毒，除菌 ，零觸碰，一指搞定病菌遠離守護您的健康！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">RotoQ360</p>
+                        </a>
+                    </div>
+                    <p class="pb-5" style="color: #3f3f3f;">
+                        "終極防疫保鑣" 紫外線 UV 除菌燈 | 可攜式 | 零觸碰 | 多功能 | 快速便捷, 10 秒 UV 自體除...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 20 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$1,551,060</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_287910_image_big.png"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 Beaurit｜皮拉提斯工具組 】抗疫在家都沒動？輕便好收納，讓你在家運動，也能有器械式皮拉提斯的效果！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Beaurit Taiwan</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        韓國設計製造，跟著韓國SOL老師影片一起動，居家運動不求人！矯正姿勢、雕塑體態、按摩放鬆！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 2 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$3,762,550</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_321499_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">七三茶堂《喝的保養品 麴米茶 》｜一杯抵40條小黃瓜消化酵素，好氣色由內而外。</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">飲食 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">七三茶堂</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        大家好，我們是七三茶堂。自2008年品牌成立以來，這是我們第一次推出強調『 機能與美味』兼具的茶包商品。《喝的保養...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 45 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$128,018</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_315108_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">史上最強 CP 最高機能 T ：奇異長效涼感Ｔ｜100% 長效涼感．殺菌除臭．零汗漬的『快乾多功能Ｔ袖』</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">O5PRO</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        依台灣夏季氣候為基礎設計，通過多項國際標準檢測，第一件 『長效涼感．無汗臭．零汗漬．快乾』 又兼具透氣、棉感跟彈力...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 46 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$1,567,694</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_319724_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">畢業花禮送到家 X 苒染花室防疫企劃｜在不能見面的此刻，用花束來傳達祝福吧！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">苒染花室</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        讓畢業生在家防疫仍然可以收到畢業花束或花藝禮盒的溫暖祝福。</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 10 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$7,197</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_305718_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 WOKY 恰恰鍋｜一支專為台灣人設計的無塗層不沾鍋 】抗疫居家新生活，只要這一鍋！滿足日常煎、炒、煮、炸的所有烹飪情境。</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">WOKY</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 18px;">
+                        一把好鍋，給你恰如其分的美好料理日常。</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 25 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$6,051,885</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_322061_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">SWANZ 芯動陶瓷便當｜首創業界最輕陶瓷便當盒</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Swanz 天鵝瓷</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 29px;">
+                        輕量化一體成型陶瓷便當盒，好清洗不留污漬異味，專利矽膠套，精密防漏，隔熱保溫，可蒸可烤可微波，分隔設計，食物不混雜...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 31 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$558,230</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_305234_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">輕輕背護脊書包｜骨科醫師攜手打造，610g 業界最輕，保護孩子的黃金成長期</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Super Double</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        業界最輕，護脊書包的全新選擇！輕輕背護脊書包，由快卡背包團隊與骨科權威林東儀醫師攜手打造，無微不至的照護細節，獻給...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 10 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$9,422,080</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_320922_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">5DII 無敵兔　小兔兔拿房子去抵押也要做出來的台灣原創組裝模型</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">牛奶公司玩具</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 53px;">
+                        5DII無敵兔　牛奶玩具的台灣原創組裝模型募資計畫正式啟動，小兔兔波波拿房子去抵押也要做出來的組裝模型就是這個啦！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 40 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$1,998,692</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_322520_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 萬播 T2R Max｜攜帶式微型投影機 】全球獨家首發，最強 CP 值，帶著走的行動劇院！隨身收納包解鎖加購！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">睿濬國際</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 23px;">
+                        海外投影機類熱銷冠軍品牌，為使用者帶來全新沉浸式娛樂體驗。追劇、打 Game 不想再被侷限? 小空間也可以有大改變...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 3 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$25,992,920</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_319122_image_big.png"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">好剪才抗疫存亡戰｜活下去！完成髮型職人培力計畫：改善技職、翻轉窮忙產業</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">社會 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">好剪才 - SuperbCut</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        受到新冠肺炎疫情升溫的影響，好剪才髮廊自2021年5月18日起，陷入了暫時停業的抗疫存亡戰！為了活下去，我們需要大...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 56 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$62,600</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_322609_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 inCharge X 】全新進化！100W極速快充，讓手機變主機的OTG六合一傳輸線</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">inCharge Taiwan</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 24px;">
+                        全球好評的六合一USB接頭組合，提供高達100W極速充電，並擁有480Mbit高速資料傳輸，一條就能應付筆電、平板...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 3 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$3,353,338</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_322135_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【最後倒數】ROLLS重磅回歸！瞬間捲收傘全新升級 2.0 LIGHT輕量版俐落再進化</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">ROLLS x 有設計</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 24px;">
+                        一代募資突破1600萬，延續一鍵回彈、快速捲收特色。二代更輕量省力、防風更堅固；摺傘新革命，重新定義你的雨天收傘體驗 !</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #67b47f;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 6 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$6,168,908</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link px-3" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">10</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">下一頁</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row justify-content-between my-5 pt-5" style="border-top:1px solid #ccc;">
+            <h3>預購式專案</h3>
+            <!-- <button class="btn btn-outline-primary">更多 ▸</button> -->
+            <button class="more px-4 py-2" style="border: 1px solid black;background-color: #fff;border-radius: 5px;color: #0050a2;cursor: pointer;">更多 ▸</button>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_302396_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 LaserPecker｜蜂鳥雷雕機 2 代 】地表最輕巧、功能最全面的 “攜帶式金屬雷雕機” / 王者歸來的超高 CP 值雷雕 及 切割體驗！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">LaserPecker Taiwan</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        重新定義攜帶式金屬雷雕機的時代！ 金屬雷雕全新升級，作業速率再度提升；全圖預覽、傳輸速度值 MAX， 開創行動式雷...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 10 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$26,428,140</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_317812_image_big.png"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">Urban Belt 磁扣式彈力腰帶 | 一秒快速穿脫，捨不得解開的彈性舒適</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Xpand Taiwan</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 31%;">
+                        解開傳統皮帶束縛！「咔」一聲扣上支援你的動滋動，城市戶外自由穿梭，正式休閒一條俱全。</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 38 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$1,048,040</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_306712_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">塵灌吸 手持吸塵打氣機 迷你無線吸塵器+打氣機 車用家用兩不誤 吸塵打氣二合一</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">goshop</p>
+                        </a>
+                    </div>
+                    <p class="pb-5" style="color: #3f3f3f;">
+                        小米有品精品｜首創無線吸塵器 + 電動打氣機二合一，垃圾灰塵、胎壓不足，行車居家大小事，就讓塵灌吸來幫你解決！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 33 小時</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$760,409</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_320359_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 霍曼 Homerun｜"無線水泵" 寵物飲水機 】首創無線水泵，好清洗又靜音，讓毛孩愛上喝水水，嘖嘖優惠最後倒數，錯過不再！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">霍曼Homerun</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        解決「 有線水泵 」的困擾，難清洗又有漏電風險！擁有像Iphone一樣的無線感應充電技術，使用便利清洗超方便。打造...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 24 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$5,760,070</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_313105_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">Wowstick Drill 職人電鑽筆 | 優雅打洞、俐落鑽孔，8 in 1 一筆搞定！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Wowstick Taiwan</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 31%;">
+                        磨砂鋁合金一體成型，搭配 8 組可替換式鑽頭，一筆搞定大小工事</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 17 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$2,079,430</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_311513_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">法國 Bob 小寶洗碗機｜世界最輕巧 x 最快洗淨的免安裝洗碗機！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">綠恩家enegreen</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 31%;">
+                        比手洗省 5 倍水量、紫外線殺菌率高達 99.9%，讓租屋族、小坪數使用者都能入手的法籍碗工！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #2974b1;">
+                        <div>
+                            <i class="far fa-clock pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>剩下 25 天</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$3,988,492</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link px-3" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">8</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">下一頁</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row justify-content-between my-5 pt-5" style="border-top:1px solid #ccc;">
+            <h3>訂閱式專案</h3>
+            <!-- <button class="btn btn-outline-primary">更多 ▸</button> -->
+            <button class="more px-4 py-2" style="border: 1px solid black;background-color: #fff;border-radius: 5px;color: #0050a2;cursor: pointer;">更多 ▸</button>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_314548_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">《 The Big Issue 大誌雜誌 》 疫情期應變訂閱方案</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">出版 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">The Big Issue 大誌雜誌</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        2020 年開始的一場疫情改變了人類的生活，為了減緩疫情對大誌雜誌街頭販售員的衝擊，我們啟動了「短期訂閱服務」——...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$307,820 / 每月</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_312769_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">浪少年有未來 | 更生少年蛻變募資計畫</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">社會 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">更生少年關懷協會</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 15.5%;">
+                        我們希望重新定義更生少年的價值，撕除社會標籤，從出少觀所後的接風餐、追蹤輔導到職業培訓，建立少年與社會的正向連結，...</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$17,405 / 每月</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_101992_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">敏迪選讀-手機裡的國際新聞台</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">社會 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">敏迪</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 22.5%;">
+                        支持【敏迪選讀】提供更親民、更寓教於樂的國際新聞</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$760,409</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_292502_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">野球抬牡蠣podcast養殖計畫</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">出版 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">野球抬牡蠣</p>
+                        </a>
+                    </div>
+                    <p class="pb-4" style="color: #3f3f3f;">
+                        台灣第一個日職主題的Podcast，每週一杯咖啡的銅板價，滾羊與艾迪讓您日職資訊不斷檔。</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$6,965 / 每月</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5" style="margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_132954_image_big.png"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">天氣特急 - 集資計畫(月付方案)</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">出版 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">台灣颱風論壇資訊科技</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 13.5%;">
+                        月付60元，支持颱風論壇，服務再進化！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$14,615 / 每月</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="img-wrap" style="width: 100%; height:240px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-100"
+                        src="./img/asset_179463_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">“River’s 543 plus”漫畫連載募資計畫</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">插畫動漫 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">River</p>
+                        </a>
+                    </div>
+                    <p style="color: #3f3f3f;padding-bottom: 7%;">
+                        讓熟悉的River漫畫角色們，再次演出一篇篇精彩的四格漫畫吧！</p>
+                    <div class="d-flex justify-content-between pt-3" style="border-top: 2px solid #862ec0;">
+                        <div>
+                            <i class="fas fa-infinity pr-1" style="color: #767676;font-size: 14px;"></i>
+                            <small>長期訂閱</small>
+                        </div>
+                        <h6 style="font-weight: 600;">NT$138,793 / 每月</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link px-3" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">13</a></li>
+                    <li class="page-item"><a class="page-link px-3" href="#">下一頁</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container" style="border-top: 1px solid #ccc;">
+            <div class="row" style="margin-top: 6%; margin-bottom: 6%;">
+                <div class="jumbotron text-light text-center w-100 d-flex flex-column align-items-start justify-content-center"
+                    style="background:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url('./img/asset_319655_image_original.jpg') 0 0 no-repeat; background-size: cover;height: 600px;cursor: pointer;">
+                    <p class="px-2 py-2" style="font-size: 12px;background-color: black;">計畫更新</p>
+                    <small class="pb-2">TIJ™ 鈦極筆PRO&PRO+｜長度可調、握位優化、多種筆芯，不用出門試寫，直接在家調到最好寫！</small>
+                    <span style="font-size: 30px;font-weight: 700;">
+                        TIJ™ 鈦極筆PRO(+)｜滿300萬加碼升級三
+                    </span>
+                    <span style="padding: top -50px;font-size: 30px;font-weight: 700;">年保固｜集資好評延長至6月29日！</span>
+                    <p class="pt-3 pb-4">感謝所有贊助人的支持，陪著 #TIJ鈦極筆PRO(+)...</p>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                        style="width:fit-content; font-size: 15px;font-weight: 600;">完整計畫更新</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between my-5 pt-5" style="border-top:1px solid #ccc;">
+            <h3>近期成功計畫</h3>
+            <!-- <button class="btn btn-outline-primary">更多 ▸</button> -->
+            <button class="more px-4 py-2" style="border: 1px solid black;background-color: #fff;border-radius: 5px;color: #0050a2;cursor: pointer;">更多 ▸</button>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-5"  style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_292039_image.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【米路哈勇-原住民文創藝術寓意口罩】</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">時尚 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">APOCOK雅波藝術</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 65%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2021/06/05</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$102,360</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_259231_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">T2GO+ ALL-ROUND VERSATILITY PANTS全方位機能褲</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">T2GO+</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 53%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2021/06/04</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$255,460</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">文字與少數圖片展覽</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">藝術 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">家瑩</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 76%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2021/06/05</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$11,500</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_293335.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">防護升級 USii 親子款透氣風雨衣 ★ 面料通過EN 14126 & ASTM F1671【皮膚科醫師推薦】透氣兒童防水外套 (S/90 - 110cm，M/110 - 130cm) + 大人風雨衣(單一尺寸/160 - 180cm)</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">USii</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2021/06/03</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 2px;">NT$135,698</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between my-5 pt-5" style="border-top:1px solid #ccc;">
+            <h3>經典計畫</h3>
+            <!-- <button class="btn btn-outline-primary">更多 ▸</button> -->
+            <button class="more px-4 py-2" style="border: 1px solid black;background-color: #fff;border-radius: 5px;color: #0050a2;cursor: pointer;">更多 ▸</button>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-5"  style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_8499_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">一秒變換風格，只要翻轉背包 - FlipBag™ by Allrover™</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">allrover®</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 35%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2016/08/10</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$69,245,122</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_1770_image_big.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">Stair-Rover™ - 八輪滑板讓你遨遊城市 毫無阻攔</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">allrover®</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 35%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2014/10/20</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$39,062,040</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:160px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_146273.jpg"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">【 PrinCube - 地表最小彩色口袋式印刷神器 】輕輕一滑，隨時隨地印出你的個性生活！</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">設計 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Thegodthings TW</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 11%;">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2020/03/10</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 3px;">NT$38,060,100</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-5" style="margin-left: -1%;margin-right: 5px;">
+                <div class="img-wrap" style="width: 100%; height:150px; border-radius: 5px;overflow: hidden;">
+                    <img class="w-100 h-150"
+                        src="./img/asset_233745_image_big.png"
+                        style="cursor: pointer;" alt="">
+                </div>
+                <div class="mt-3">
+                    <h5 style="font-weight: 600;line-height: 1.5;cursor: pointer;">Cubiio 2 世界最薄金屬雕刻機｜雷射切割機</h5>
+                    <div class="d-flex">
+                        <p style="color: #767676;font-size: 12px;">科技 By </p>
+                        <a href="" class="by">
+                            <p class="by pl-1" style="color: #0050a2;font-size: 12px;">Cubiio</p>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between" style="padding-top: 38%">
+                        <div>
+                            <small style="color: rgb(114, 113, 113);">成功於 2020/10/21</small>
+                        </div>
+                        <h6 style="font-weight: 600;padding-top: 2px;">NT$33,992,348</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container d-flex mt-5 justify-content-between" style="border-top: 1px solid #ccc;padding-top: 6%;padding-bottom: 8%;">
+        <div class="row col-lg-3" style="flex-direction: column;text-align: center;">
+            <p style="font-weight: 600;">社群</p>
+            <a href="">
+                <small style="color: #0050a2;padding-left: 7%;">YouTube</small>
+            </a>
+            <a href="">
+                <small style="color: #0050a2;padding-left: 11%;">Facebook</small>
+            </a>
+            <a href="">
+                <small style="color: #0050a2;padding-left: 13%;">Instagram</small>
+            </a>
+            <a href="">
+                <small style="color: #0050a2;padding-left: 5%;">Twitter</small>
+            </a>
+        </div>
+        <div class="row col-lg-3" style="flex-direction: column;text-align: center;">
+            <p style="font-weight: 600;">幫助</p>
+            <a href="">
+                <small class="pl-4" style="color: #0050a2;">常見問答</small>
+            </a>
+            <a href="">
+                <small class="pl-4" style="color: #0050a2;">使用條款</small>
+            </a>
+            <a href="">
+                <small style="color: #0050a2;padding-left: 15%;">隱私權政策</small>
+            </a>
+        </div>
+        <div class="rwo col-lg-3" style="flex-direction: column;text-align: center;">
+            <p style="font-weight: 600;">關於</p>
+            <a href="">
+                <small class="pl-4" style="color: #0050a2;">關於我們</small>
+            </a>
+            <a href=""><br>
+                <small class="pl-4" style="color: #0050a2;">商標資源</small>
+            </a>
+            <br><br><small style="padding-left: 37%;">© 嘖室股份有限公司</small>
+        </div>
+        <div class="row col-lg-3">
+            <a href="">
+                <img src="./img/smalllogo.JPG" style="padding-left: 150%;" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
